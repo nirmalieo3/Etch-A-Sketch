@@ -7,9 +7,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	background: grey;
-	margin-top: 0px;
+	margin-top: 0;
 	width: 100%;
-
 }
 
 h1 {
@@ -38,11 +37,9 @@ h1 {
 	box-shadow: 5px 5px 5px 5px black;
 } 
 
-
-.reset{
+/*.reset{
 	padding: 15px 50px;
-	
-}
+}*/
 
 .grid {
 	margin-top: -120px;
@@ -52,39 +49,100 @@ h1 {
 	width: 675px;
 	height: 675px;
 	float: right;
-	
 	background:rgb(59, 58, 55);
-
-
-	/*grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);*/
-}
+ }
 
 .cell {
 	background-color: black;
-	
 	border: 1px solid rgb(66, 66, 64);
 	width: 40px;
 	height: 40px;
 	float:right;
 	border-radius: 30%;
-	z-index: 2;
-
-	}
+ }
 .cell2 {
 	background-color: black;
-	
 	border: 1px solid rgb(66, 66, 64);
 	width: 22px;
 	height: 22px;
 	float:right;
 	border-radius: 30%;
-	z-index: 2;
-
-	}
-
+ }
 
 footer {
 	float: left;
 	width:90%;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+   .btn {
+   	display: inline-block;
+   	width: 80vw;
+   	margin-left: 30px;
+   	margin-bottom: 8px;
+   }
+  .button{
+  	float: left;
+	font-size: 8px;
+	width: 65px;
+	cursor:pointer;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 5px;
+  }
+ .grid {
+	margin-top: 0px;
+	display: inline-block;
+    border: 5px solid black;
+	width: 82vw;
+	height: 72vh;
+	float: left;
+	background:rgb(59, 58, 55);
+	overflow: hidden;
+	margin-left: 20px;
+ }
+ 
+ h1{
+ 	font-size: 30px;
+ 	text-align: center;
+ }
+}
+@media only screen and (max-device-width: 780px) and (min-device-width: 480px) {
+	.btn {
+   	display: inline-block;
+   	width: 80vw;
+   	margin-left: 300px;
+   
+   	margin-top: 50px;
+   }
+  .button{
+  	float: left;
+	font-size: 8px;
+	width: 65px;
+	cursor:pointer;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 5px;
+  }
+ .grid {
+	margin-top: 50px;
+	display: inline-block;
+    border: 5px solid black;
+	width: 88vw;
+	height: 66vh;
+	float: left;
+	background:rgb(59, 58, 55);
+	overflow: hidden;
+	margin-left:100px;
+ }
+ h1{
+ 	text-align: center;
+ 	font-size: 40px;
+ 	margin-top: 50px;
+ }
+ footer {
+ 	margin-top: 100px;
+ }
+
 }
